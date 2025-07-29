@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Travel Recommendation</title>
+    <title>Contact Us Page</title>
     <link rel="stylesheet" href="./style.css" />
     <link
       rel="stylesheet"
@@ -14,7 +14,7 @@
     />
   </head>
   <body>
-    <!--Nav Bar -->
+    <!--NAV BAR-->
     <nav>
       <div id="title">
         <img src="./images/travelIcon.png" alt="" width="75px" height="75px" />
@@ -26,29 +26,34 @@
         <li><a href="about.html">About Us</a></li>
         <li><a href="contact.html">Contact Us</a></li>
       </ul>
-      <div id="searchContainer">
-        <input
-          type="text"
-          placeholder="Enter a destination or keyword"
-          id="input"
-        />
+      <div id="searchContainer" class="hidden">
+        <input type="text" placeholder="Enter a destination or keyword" />
         <button id="searchBtn">Search</button>
         <button id="clearBtn">Clear</button>
       </div>
     </nav>
-
-    <!--Home page title and description-->
+    <!--Contact Us page -->
     <div id="flexDiv">
-      <div id="homeTitle">EXPLORE DREAM DESTINATION</div>
-      <p id="homeDescription">
-        It encourages exploration of unfamiliar territories, embracing diverse
-        cultures and landscapes, while pursuing the desired destination that
-        captivatess the heart and ignites a sense of wonder
-      </p>
-      <button id="bookBtn">BOOK NOW</button>
+      <h1 id="contactTitle">CONTACT US</h1>
+      <p id="contactDes">Get in touch</p>
 
-      <!--Side Bar Icons-->
+      <form id="contactForm">
+        <label for="name">Name</label><br /><br />
+        <input type="text" id="name" placeholder="Type your name" /><br /><br />
 
+        <label for="email">Email</label><br /><br />
+        <input
+          type="email"
+          id="email"
+          placeholder="Type your email"
+        /><br /><br />
+
+        <label for="message">Message</label><br /><br />
+        <textarea placeholder="Type your message"></textarea><br /><br />
+        <button type="submit">Submit</button>
+      </form>
+
+      <!--Side bar-->
       <div id="sideBar">
         <ul>
           <li><i class="fa-brands fa-twitter"></i></li>
@@ -57,10 +62,6 @@
           <li><i class="fa-brands fa-youtube"></i></li>
         </ul>
       </div>
-
-      <!--Recommendation Results -->
-      <div id="recContainer"></div>
     </div>
-    <script src="./script.js"></script>
   </body>
 </html>
